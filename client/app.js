@@ -1,7 +1,4 @@
-// WebSocket Playground - Main Application
-console.log("App initialized");
-
-const socket = new WebSocket("wss://echo.websocket.org");
+const socket = new WebSocket("ws://localhost:8080");
 
 socket.addEventListener("open", () => {
   setTimeout(() => {
