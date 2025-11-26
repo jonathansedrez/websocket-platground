@@ -11,8 +11,6 @@ setInterval(() => {
 }, 30000);
 
 wss.on("connection", (ws) => {
-  ws.send("Welcome!");
-
   ws.isAlive = true;
   ws.on("pong", () => (ws.isAlive = true));
 
